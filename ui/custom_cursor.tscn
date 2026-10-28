@@ -1,0 +1,37 @@
+[gd_scene load_steps=7 format=3 uid="uid://bjbfkser5nysv"]
+
+[ext_resource type="Script" uid="uid://kst2cnve1nar" path="res://ui/trail.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://mxxxli8nhgin" path="res://assets/ui/open_hand.png" id="2"]
+[ext_resource type="Script" uid="uid://0rssg4fp6qbe" path="res://ui/custom_cursor.gd" id="3"]
+[ext_resource type="Texture2D" uid="uid://bklrtm3nn7x6t" path="res://assets/ui/clinched_fist.png" id="4"]
+
+[sub_resource type="Curve" id="Curve_pb6jn"]
+_data = [Vector2(0.0030303001, 1), 0.0, 0.0, 0, 0, Vector2(0.7454546, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Gradient" id="Gradient_djlxp"]
+colors = PackedColorArray(1, 0.13725491, 0, 1, 1, 1, 0, 1)
+
+[node name="CustomCursor" type="CanvasLayer"]
+layer = 2
+
+[node name="Trail" type="Line2D" parent="."]
+process_mode = 3
+z_index = 10
+points = PackedVector2Array(372, 179)
+width = 30.0
+width_curve = SubResource("Curve_pb6jn")
+gradient = SubResource("Gradient_djlxp")
+begin_cap_mode = 2
+script = ExtResource("1")
+MAX_LENGTH = 15
+
+[node name="CustomCursor" type="Sprite2D" parent="."]
+process_mode = 3
+z_index = 10
+position = Vector2(-5, 0)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("2")
+script = ExtResource("3")
+rest_texture = ExtResource("2")
+click_texture = ExtResource("4")

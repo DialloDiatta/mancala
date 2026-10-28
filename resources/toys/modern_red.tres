@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Bead" load_steps=3 format=3 uid="uid://b6rge2s1dptcf"]
+
+[ext_resource type="Script" uid="uid://dhddphchtrtbt" path="res://resources/toys/bead.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://cbh27orqa52d0" path="res://assets/beads/modern_red.png" id="2"]
+
+[resource]
+script = ExtResource("1")
+value = -1
+texture = ExtResource("2")
+metadata/_custom_type_script = "uid://dhddphchtrtbt"

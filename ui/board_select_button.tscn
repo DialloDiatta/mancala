@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://7nbt7m7j37hb"]
+
+[ext_resource type="Texture2D" uid="uid://cjdoghxv7xm0n" path="res://assets/boards/cedar_empty.png" id="1"]
+[ext_resource type="Script" uid="uid://i6cljlxsj0pd" path="res://ui/board_select_button.gd" id="2"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_6xhd3"]
+
+[node name="BoardButton" type="TextureButton"]
+modulate = Color(1, 1, 1, 0)
+z_index = -7
+offset_top = -228.5
+offset_right = 1132.0
+offset_bottom = 228.5
+scale = Vector2(0.1, 0.1)
+pivot_offset = Vector2(566, 228.5)
+focus_mode = 0
+mouse_filter = 2
+toggle_mode = true
+button_group = SubResource("ButtonGroup_6xhd3")
+texture_normal = ExtResource("1")
+script = ExtResource("2")

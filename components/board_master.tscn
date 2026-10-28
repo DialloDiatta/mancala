@@ -1,0 +1,173 @@
+[gd_scene load_steps=27 format=3 uid="uid://b3dxjdbod158"]
+
+[ext_resource type="Script" uid="uid://c41hr6kse4f27" path="res://components/board_master.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://dayjj1rit4mpj" path="res://assets/boards/abacus.png" id="2"]
+[ext_resource type="PackedScene" uid="uid://nplbtvnywyre" path="res://game-1/cups.tscn" id="3"]
+[ext_resource type="Script" uid="uid://dwri3q278pbqy" path="res://game-1/ui.gd" id="4"]
+[ext_resource type="PackedScene" uid="uid://qhhwbaqstdh7" path="res://ui/selection_wheel.tscn" id="5"]
+[ext_resource type="Resource" uid="uid://b8fi5cs00ymf" path="res://resources/toys/positive_bead.tres" id="6"]
+[ext_resource type="Resource" uid="uid://csksxjj8vga58" path="res://resources/toys/negative_bead.tres" id="7"]
+[ext_resource type="Resource" uid="uid://dofjpvkk8e2no" path="res://resources/toys/ten_bead.tres" id="8"]
+[ext_resource type="Resource" uid="uid://bd1kcm5du02oj" path="res://resources/toys/five_bead.tres" id="9"]
+[ext_resource type="Resource" uid="uid://kg5oiflbxc1g" path="res://resources/toys/boy.tres" id="10"]
+[ext_resource type="Resource" uid="uid://dhr6ns0alesmu" path="res://resources/toys/girl.tres" id="11"]
+[ext_resource type="Resource" uid="uid://djljw8bcd5psy" path="res://resources/toys/house_of_ten.tres" id="12"]
+[ext_resource type="Resource" uid="uid://decbcjwu6hdn3" path="res://resources/toys/black_bead.tres" id="13"]
+[ext_resource type="Resource" uid="uid://dhnaym6oppep" path="res://resources/toys/modern_yellow.tres" id="14"]
+[ext_resource type="Resource" uid="uid://7y7h3cl08pm6" path="res://resources/toys/modern_green.tres" id="15"]
+[ext_resource type="Resource" uid="uid://b6rge2s1dptcf" path="res://resources/toys/modern_red.tres" id="16"]
+[ext_resource type="Resource" uid="uid://coxepkkg2f0l0" path="res://resources/toys/cowri.tres" id="17"]
+[ext_resource type="Script" uid="uid://6lfruqvxkuqw" path="res://resources/toys/random_bead.gd" id="18"]
+[ext_resource type="Texture2D" uid="uid://c5kyylc0ja0hc" path="res://assets/beads/seabean_1.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://cfrmvriaiji7a" path="res://assets/beads/seabean_2.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://dnl3y40odu4c8" path="res://assets/beads/seabean_3.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://bo2hohi83eet4" path="res://assets/beads/seabean_4.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://4s0t0sn2w5h2" path="res://assets/beads/seabean_5.png" id="23"]
+[ext_resource type="Resource" uid="uid://xuka8xyr156c" path="res://resources/toys/ten_stone.tres" id="24"]
+[ext_resource type="Script" uid="uid://d0yu3itv1xnio" path="res://ui/cursor_handler.gd" id="25"]
+
+[sub_resource type="Resource" id="Resource_on05f"]
+script = ExtResource("18")
+resource_local_to_scene = true
+variations = [ExtResource("19"), ExtResource("20"), ExtResource("21"), ExtResource("22"), ExtResource("23")]
+random_rotation = true
+value = 1
+texture = ExtResource("19")
+metadata/_custom_type_script = "uid://6lfruqvxkuqw"
+
+[node name="BoardMaster" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1")
+
+[node name="Outside" type="ColorRect" parent="."]
+process_mode = 3
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+color = Color(1, 1, 1, 0)
+
+[node name="Abacus" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -814.0
+offset_top = -283.0
+offset_right = 821.0
+offset_bottom = 377.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2")
+
+[node name="Area2D" parent="." instance=ExtResource("3")]
+offset_left = 812.0
+offset_top = 724.715
+offset_right = 852.0
+offset_bottom = 764.715
+
+[node name="Area2D4" parent="." instance=ExtResource("3")]
+offset_left = 1089.0
+offset_top = 725.715
+offset_right = 1129.0
+offset_bottom = 765.715
+
+[node name="Area2D5" parent="." instance=ExtResource("3")]
+offset_left = 1320.0
+offset_top = 724.715
+offset_right = 1360.0
+offset_bottom = 764.715
+
+[node name="Area2D6" parent="." instance=ExtResource("3")]
+offset_left = 1548.0
+offset_top = 724.715
+offset_right = 1588.0
+offset_bottom = 764.715
+
+[node name="Area2D7" parent="." instance=ExtResource("3")]
+offset_left = 1544.0
+offset_top = 436.715
+offset_right = 1584.0
+offset_bottom = 476.715
+
+[node name="Area2D8" parent="." instance=ExtResource("3")]
+offset_left = 1313.0
+offset_top = 436.715
+offset_right = 1353.0
+offset_bottom = 476.715
+
+[node name="Area2D9" parent="." instance=ExtResource("3")]
+offset_left = 1082.0
+offset_top = 436.715
+offset_right = 1122.0
+offset_bottom = 476.715
+
+[node name="Area2D10" parent="." instance=ExtResource("3")]
+offset_left = 806.0
+offset_top = 436.715
+offset_right = 846.0
+offset_bottom = 476.715
+
+[node name="Area2D11" parent="." instance=ExtResource("3")]
+offset_left = 576.0
+offset_top = 436.715
+offset_right = 616.0
+offset_bottom = 476.715
+
+[node name="Area2D12" parent="." instance=ExtResource("3")]
+offset_left = 344.0
+offset_top = 435.715
+offset_right = 384.0
+offset_bottom = 475.715
+
+[node name="Area2D2" parent="." instance=ExtResource("3")]
+offset_left = 582.0
+offset_top = 725.715
+offset_right = 622.0
+offset_bottom = 765.715
+
+[node name="Area2D3" parent="." instance=ExtResource("3")]
+offset_left = 351.0
+offset_top = 725.715
+offset_right = 391.0
+offset_bottom = 765.715
+
+[node name="BlocksGroup" type="Control" parent="."]
+unique_name_in_owner = true
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="UI" type="CanvasLayer" parent="."]
+process_mode = 3
+script = ExtResource("4")
+
+[node name="SelectionWheel" parent="UI" instance=ExtResource("5")]
+visible = false
+options = [null, ExtResource("6"), ExtResource("7"), ExtResource("8"), ExtResource("9"), ExtResource("10"), ExtResource("11"), ExtResource("12"), ExtResource("13"), ExtResource("14"), ExtResource("15"), ExtResource("16"), ExtResource("17"), SubResource("Resource_on05f"), ExtResource("24")]
+
+[node name="Timer" type="Timer" parent="UI"]
+wait_time = 0.5
+one_shot = true
+
+[node name="CursorHandler" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("25")
+
+[connection signal="gui_input" from="Outside" to="." method="_on_outside_gui_input"]
+[connection signal="gui_input" from="Outside" to="UI" method="_on_outside_gui_input"]
+[connection signal="gui_input" from="Abacus" to="." method="_on_abacus_gui_input"]

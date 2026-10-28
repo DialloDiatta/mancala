@@ -1,0 +1,7 @@
+[gd_resource type="Theme" format=3 uid="uid://blrt826hsq7pr"]
+
+[resource]
+Button/font_sizes/font_size = 40
+HBoxContainer/constants/separation = 43
+Label/font_sizes/font_size = 24
+LineEdit/font_sizes/font_size = 40

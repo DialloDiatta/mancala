@@ -1,0 +1,130 @@
+[gd_scene load_steps=20 format=3 uid="uid://dbi301l8knlnd"]
+
+[ext_resource type="Script" uid="uid://dlrftk2phr0fo" path="res://game-3/game_3.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://26ymf6cu3tea" path="res://assets/ui/kente.png" id="2"]
+[ext_resource type="PackedScene" uid="uid://caeg4bgkpb6nm" path="res://components/4x6_board_master.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://doi1vrjeibngm" path="res://components/Base.tscn" id="4"]
+[ext_resource type="Script" uid="uid://6lfruqvxkuqw" path="res://resources/toys/random_bead.gd" id="5"]
+[ext_resource type="Texture2D" uid="uid://c5kyylc0ja0hc" path="res://assets/beads/seabean_1.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://cfrmvriaiji7a" path="res://assets/beads/seabean_2.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://dnl3y40odu4c8" path="res://assets/beads/seabean_3.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://bo2hohi83eet4" path="res://assets/beads/seabean_4.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://4s0t0sn2w5h2" path="res://assets/beads/seabean_5.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://crrv7r4gygon5" path="res://assets/beads/seabean_base_4x6.png" id="11"]
+[ext_resource type="Resource" uid="uid://coxepkkg2f0l0" path="res://resources/toys/cowri.tres" id="12"]
+[ext_resource type="Texture2D" uid="uid://3fpwivuvisbl" path="res://assets/beads/cowry_base_4x6.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://bip1j4ncvs0ds" path="res://assets/beads/glass_base_beads_yellow.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://df5nvrwyfcg2y" path="res://assets/beads/glass_base_beads_red.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://dhre3jvadva00" path="res://assets/ui/Kid Tut Logo - No Text.png" id="16"]
+[ext_resource type="Script" uid="uid://bm17txogtcafv" path="res://game-1/blocks_group.gd" id="17"]
+[ext_resource type="Texture2D" uid="uid://dyxddohaufueu" path="res://assets/ui/banner.png" id="18"]
+
+[sub_resource type="Resource" id="Resource_m3o7k"]
+script = ExtResource("5")
+resource_local_to_scene = true
+variations = [ExtResource("6"), ExtResource("7"), ExtResource("8"), ExtResource("9"), ExtResource("10")]
+random_rotation = false
+value = 1
+texture = ExtResource("6")
+metadata/_custom_type_script = "uid://6lfruqvxkuqw"
+
+[node name="game-3" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Kente" type="Sprite2D" parent="."]
+position = Vector2(961, 542)
+texture = ExtResource("2")
+
+[node name="4x6" parent="." instance=ExtResource("3")]
+layout_mode = 1
+
+[node name="Base" parent="." node_paths=PackedStringArray("board") instance=ExtResource("4")]
+offset_left = 1545.0
+offset_top = 517.0
+offset_right = 1545.0
+offset_bottom = 517.0
+new_bead_resource = SubResource("Resource_m3o7k")
+base_texture = "uid://du5bjb717sfei"
+base_beads_texture = ExtResource("11")
+board = NodePath("../4x6")
+
+[node name="Base2" parent="." node_paths=PackedStringArray("board") instance=ExtResource("4")]
+offset_left = 381.0
+offset_top = 517.0
+offset_right = 381.0
+offset_bottom = 517.0
+new_bead_resource = ExtResource("12")
+base_texture = "uid://du5bjb717sfei"
+base_beads_texture = ExtResource("13")
+board = NodePath("../4x6")
+
+[node name="ControlBase5" parent="." instance=ExtResource("4")]
+visible = false
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1538.0
+offset_top = -478.0
+offset_right = -1538.0
+offset_bottom = -478.0
+grow_horizontal = 0
+grow_vertical = 0
+base_texture = "uid://du5bjb717sfei"
+base_beads_texture = ExtResource("14")
+
+[node name="ControlBase4" parent="." instance=ExtResource("4")]
+visible = false
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -374.0
+offset_top = -481.0
+offset_right = -374.0
+offset_bottom = -481.0
+grow_horizontal = 0
+grow_vertical = 0
+base_texture = "uid://du5bjb717sfei"
+base_beads_texture = ExtResource("15")
+
+[node name="KidTutLogo-NoText" type="Sprite2D" parent="."]
+position = Vector2(134, 220)
+scale = Vector2(0.28888, 0.28888)
+texture = ExtResource("16")
+
+[node name="BlocksGroup" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("17")
+
+[node name="AfricanMathBanner" type="TextureButton" parent="."]
+layout_mode = 0
+offset_top = 926.0
+offset_right = 1931.0
+offset_bottom = 1088.0
+texture_normal = ExtResource("18")
+
+[connection signal="pressed" from="AfricanMathBanner" to="." method="_on_african_math_banner_pressed"]

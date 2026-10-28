@@ -1,0 +1,31 @@
+@tool
+extends Label
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+func get_text_size() -> Vector2:
+    return get_theme_default_font().get_string_size(text)

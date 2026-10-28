@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="RandomBead" load_steps=8 format=3 uid="uid://xuka8xyr156c"]
+
+[ext_resource type="Script" uid="uid://6lfruqvxkuqw" path="res://resources/toys/random_bead.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://bhssgy8kg7tk8" path="res://assets/beads/ten_stone_1.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://byq34x1j6o4qh" path="res://assets/beads/ten_stone_2.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://d2my5kqwknak8" path="res://assets/beads/ten_stone_3.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://ctlwt8jydjlxb" path="res://assets/beads/ten_stone_4.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://c6qfvf4m157t" path="res://assets/beads/ten_stone_5.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://c3w3d53fnk8vw" path="res://assets/beads/ten_stone_6.png" id="7"]
+
+[resource]
+script = ExtResource("1")
+variations = [ExtResource("2"), ExtResource("3"), ExtResource("4"), ExtResource("5"), ExtResource("6"), ExtResource("7")]
+random_rotation = true
+value = 0
+texture = ExtResource("2")
+metadata/_custom_type_script = "uid://6lfruqvxkuqw"

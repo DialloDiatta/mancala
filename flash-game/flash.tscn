@@ -1,0 +1,150 @@
+[gd_scene load_steps=7 format=3 uid="uid://c28w5pqbixpyr"]
+
+[ext_resource type="Theme" uid="uid://blrt826hsq7pr" path="res://resources/flash_theme.tres" id="1"]
+[ext_resource type="Script" uid="uid://xrube482dyrx" path="res://flash-game/flash.gd" id="2"]
+[ext_resource type="PackedScene" uid="uid://d38inbp48ubc7" path="res://flash-game/settings.tscn" id="3"]
+[ext_resource type="Script" uid="uid://c0d86etwr4ygd" path="res://components/RandomValueComponent.gd" id="4"]
+[ext_resource type="AudioStream" uid="uid://d2rl3l72yfxk8" path="res://assets/sfx/level-up-1.mp3" id="5"]
+[ext_resource type="AudioStream" uid="uid://coijkfaac6dwa" path="res://assets/sfx/Jazz Vibes.mp3" id="6"]
+
+[node name="Flash" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1")
+script = ExtResource("2")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(4.9334e-07, 0.171302, 0.247009, 1)
+
+[node name="Number" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -745.5
+offset_top = -341.0
+offset_right = 745.5
+offset_bottom = 341.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 500
+text = "START"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Settings" parent="." instance=ExtResource("3")]
+visible = false
+layout_mode = 1
+
+[node name="InputFields" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = -87.0
+offset_right = 498.0
+offset_bottom = -24.0
+grow_vertical = 0
+
+[node name="Play" type="Button" parent="InputFields"]
+layout_mode = 2
+focus_mode = 0
+text = "Play"
+
+[node name="Replay" type="Button" parent="InputFields"]
+layout_mode = 2
+focus_mode = 0
+text = "Replay
+"
+
+[node name="Settings" type="Button" parent="InputFields"]
+process_mode = 3
+layout_mode = 2
+focus_mode = 0
+toggle_mode = true
+text = "Settings"
+
+[node name="History" type="Button" parent="InputFields"]
+visible = false
+layout_mode = 2
+text = "History
+"
+
+[node name="InputFields2" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -691.0
+offset_top = -87.0
+offset_right = -24.0
+offset_bottom = -24.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Answer" type="LineEdit" parent="InputFields2"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+placeholder_text = "Enter Answer Here"
+keep_editing_on_text_submit = true
+
+[node name="Check" type="Button" parent="InputFields2"]
+layout_mode = 2
+focus_mode = 0
+text = "Check
+"
+
+[node name="RandomValueComponent" type="Control" parent="." node_paths=PackedStringArray("refresh_button", "label")]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("4")
+refresh_button = NodePath("../InputFields/Play")
+label = NodePath("../Number")
+
+[node name="Confirmation" type="Label" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 32.0
+offset_top = -157.0
+offset_right = 380.0
+offset_bottom = -107.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 36
+text = "Correct or Try Again"
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="correct" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5")
+volume_db = -16.0
+
+[node name="music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6")
+autoplay = true
+bus = &"Music"
+parameters/looping = true
+
+[connection signal="pressed" from="InputFields/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="InputFields/Replay" to="." method="_on_replay_pressed"]
+[connection signal="toggled" from="InputFields/Settings" to="." method="_on_settings_toggled"]
+[connection signal="pressed" from="InputFields2/Check" to="." method="_on_check_pressed"]

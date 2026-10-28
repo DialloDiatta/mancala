@@ -1,0 +1,40 @@
+GDRE Tools v2.5.0-beta.5
+Windows 10.0.19045, Radeon RX 580 Series, vulkan
+Opening file: C:/Users/Grind Time/Documents/Games/_exports/10 Frame Games/10 Frame Game 4-4-2026/index.pck
+WARNING: Duplicate IDs found in cache:
+  uid://byh5uxavsfbk3 -> res://resources/toys/blue_glass.tres
+    Replacing with: res://resources/toys/hundred_bead.tres
+   at: GDRESettings::load_pack_uid_cache (modules\gdsdecomp\utility\gdre_settings.cpp:1999)
+ERROR: res://assets/ui/Kente Child 8.jpg.import: no destination files found in import data
+   at: ImportInfoModern::_load (modules\gdsdecomp\utility\import_info.cpp:618)
+Loaded 208 imported files
+Detected Engine Version: 4.5.0
+Detected Bytecode Revision: 4.5.0-stable (ebc36a7)
+Verified 423 files, no errors detected!
+Extracted 423 files, no errors detected!
+Recreating plugin configs...
+Saved project config.
+
+
+********************************EXPORT REPORT********************************
+
+Totals:                                 
+Decompiled scripts:                     55
+Failed scripts:                         0
+Imported resources for export session:  208
+Successfully converted:                 208
+Lossy:                                  99
+Rewrote metadata:                       105
+Non-importable conversions:             0
+Not converted:                          0
+Failed conversions:                     0
+-------------
+
+
+
+------------------------------------------------------------------------------------
+
+Use Godot editor version 4.5.0 to edit the project.
+
+*******************************************************************************
+

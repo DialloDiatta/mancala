@@ -1,0 +1,235 @@
+[gd_scene load_steps=13 format=4 uid="uid://f4ie0ytcicf0"]
+
+[ext_resource type="Script" uid="uid://nlb81ea8o06v" path="res://addons/signal_lens/editor/signal_lens_editor_panel.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://brdnqivcfnsun" path="res://addons/signal_lens/icons/icon_logo.png" id="2"]
+
+[sub_resource type="Image" id="Image_qqvab"]
+data = {
+"data": PackedByteArray("////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wDg4OC44ODgtf///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A4ODg/+Dg4P////8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AODg4P/g4OD/////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wDg4OD/4ODg/////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A4ODg/+Dg4P////8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AODg4P/g4OD/////AP///wD///8A////AP///wD///8A////AP///wD///8A////AOHh4Uvg4ODk4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg4+Dg4En///8A////AP///wD///8A////AP///wDg4ODk4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4ODi////AP///wD///8A////AP///wD///8A4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg/////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wDg4OD/4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OD/////AP///wD///8A////AP///wD///8A4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg/////wD///8A////AP///wD///8A////AODg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg/+Dg4P////8A////AP///wD///8A////AP///wDg4ODz4ODg2eHh4b/h4eGm4ODgjODg4HLg4OBZ4+PjP+Xl5Sbq6uoM////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AA=="),
+"format": "RGBA8",
+"height": 16,
+"mipmaps": false,
+"width": 16
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_4si22"]
+image = SubResource("Image_qqvab")
+
+[sub_resource type="Image" id="Image_vbkql"]
+data = {
+"data": PackedByteArray("////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wPg4OBp4ODgwODg4PTg4ODu4ODgxeDg4Gn///8E////AP///wD///8A////AP///wD///8A////AOnp6Rfh4eHP4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OD/4ODgxuLi4hr///8A////AP///wD///8A////AP///wbg4ODN4ODg/+Dg4Nrh4eFT7e3tDu3t7Q7g4OBS4ODg3ODg4P/g4ODF////BP///wD///8A////AP///wDh4eFm4ODg/+Dg4Nrj4+MS////AP///wD///8A////AODg4BDg4ODd4ODg/+Hh4WX///8A////AP///wD///8A4ODgxuDg4P/h4eFU////AP///wD///8A////AP///wD///8A4uLiVuDg4P/g4ODC////AP///wD///8B////BODg4O7g4OD/4+PjEv///wD///8A////AP///wD///8A////AOXl5RPg4OD/4ODg6f///wD///8A4ODgoODg4P/g4OD/4ODg/+Dg4P/h4eGf////AP///wD///8A////AP///wDm5uYU4ODg/+Dg4O3///8A////AObm5grg4ODV4ODg/+Dg4P/g4ODU5ubmCv///wD///8A////AP///wD///8A4ODgWuDg4P/g4OC5////AP///wD///8A4eHhKuDg4PXg4OD14eHhKv///wD///8A////AP///wD///8A6OjoFuDg4ODg4OD/4ODgYv///wD///8A////AP///wDg4OBg4uLiX////wD///8A////AP///wDm5uYU4ODgWODg4N3g4OD/4eHhx////wL///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A4ODg/+Dg4P/g4OD/4ODgyOPj4xL///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AODg4Ozg4ODD4ODgYP///wX///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AA=="),
+"format": "RGBA8",
+"height": 16,
+"mipmaps": false,
+"width": 16
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_66qvc"]
+image = SubResource("Image_vbkql")
+
+[sub_resource type="Image" id="Image_6ohvb"]
+data = {
+"data": PackedByteArray("////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wDg4OD/4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg/////wD///8A////AP///wD///8A////AP///wD///8A4eHhf+Dg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg/+Dg4ID///8A////AP///wD///8A////AP///wD///8A////AP///wDg4OD/4ODg/+Dg4P/g4OD/4ODg/+Dg4P////8A////AP///wD///8A////AP///wD///8A////AP///wD///8A4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OD/////AP///wD///8A////AP///wD///8A////AP///wD///8A////AODg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg/////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wDh4eFV4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OD/4eHhVf///wD///8A////AP///wD///8A////AP///wDn5+cV4ODg6uDg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg/+Dg4Orn5+cV////AP///wD///8A////AP///wD///8A4ODgq+Dg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OD/4ODgqv///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A4ODg/+Dg4P////8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AODg4P/g4OD/////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wDg4ODA4eHhv////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A4ODgQOPj4z////8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AA=="),
+"format": "RGBA8",
+"height": 16,
+"mipmaps": false,
+"width": 16
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_quth7"]
+image = SubResource("Image_6ohvb")
+
+[sub_resource type="Image" id="Image_g2aw3"]
+data = {
+"data": PackedByteArray("////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AOHh4Uvg4ODk4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg4+Dg4En///8A////AP///wD///8A////AP///wDg4ODk4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4ODi////AP///wD///8A////AP///wD///8A4ODg/+Dg4P/g4OD/4ODg/////wD///8A4ODg/+Dg4P/g4OD/4ODg/////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AOHh4Uvg4ODk4ODg/+Dg4P/g4OD/4ODg/////wD///8A4ODg/+Dg4P/g4OD/4ODg/+Dg4OPg4OBJ////AP///wDg4ODk4ODg/+Dg4P/g4OD/4ODg/+Dg4P////8A////AODg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg4v///wD///8A4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OD/////AP///wDg4OD/4ODg/+Dg4P/g4OD/4ODg/+Dg4P////8A////AODg4P/g4OD/4ODg/+Dg4P/i4uJf////AP///wD///8A////AODg4GDg4OD/4ODg/+Dg4P/g4OD/////AP///wDg4OD/4ODg/+Dg4P/g4OD/4ODg9eHh4Sr///8A////AOLi4ivg4OD14ODg/+Dg4P/g4OD/4ODg/////wD///8A4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4ODV5ubmCubm5grg4ODV4ODg/+Dg4P/g4OD/4ODg/+Dg4P////8A////AODg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg/+Hh4Z/g4OCg4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OD/////AP///wDg4ODj4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg4v///wD///8A4ODgSeDg4OLg4OD/4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg4uPj40f///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AA=="),
+"format": "RGBA8",
+"height": 16,
+"mipmaps": false,
+"width": 16
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_l8wra"]
+image = SubResource("Image_g2aw3")
+
+[sub_resource type="Image" id="Image_ysyck"]
+data = {
+"data": PackedByteArray("////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A4ODguODg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OC1////AP///wD///8A////AODg4O3g4OD/4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg6////wD///8A////AP///wDg4OCj4ODg/+Dg4Nr///8G////AP///wD///8A////AODg4Ajg4ODc4ODg/+Dg4KH///8A////AP///wD///8A5OTkHODg4Ovg4OD/4ODgiv///wD///8A////AP///wDh4eGP4ODg/+Dg4Onj4+Mb////AP///wD///8A////AP///wDi4uJF4ODg/eDg4P/g4OBp////AP///wDh4eFu4ODg/+Dg4Pzg4OBB////AP///wD///8A////AP///wD///8A////AOHh4Xfg4OD/4ODg+uDg4DHi4uI04ODg++Dg4P/g4OBy////AP///wD///8A////AP///wD///8A////AP///wD///8A4ODgqeDg4P/h4eHP4ODg0+Dg4P/g4OCl////AP///wD///8A////AP///wD///8A////AP///wD///8A////AODg4Krg4OD/4ODg/+Dg4P/g4OD/4eHhpv///wD///8A////AP///wD///8A////AP///wD///8A////AODg4Hrg4OD/4ODg/+Dg4P/g4OD/4ODg/+Dg4P/h4eF1////AP///wD///8A////AP///wD///8A////AOPj40fg4OD94ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg/OHh4UT///8A////AP///wD///8A////AOXl5R3g4ODs4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4ODq4+PjG////wD///8A////AP///wDg4OCk4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg/+Dg4KH///8A////AP///wD///8A4ODg7eDg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4ODr////AP///wD///8A////AODg4LXg4OD/4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OD/4ODg/+Dg4P/g4OD/4ODgtP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AA=="),
+"format": "RGBA8",
+"height": 16,
+"mipmaps": false,
+"width": 16
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_hnh53"]
+image = SubResource("Image_ysyck")
+
+[node name="Signal Lens" type="Control" node_paths=PackedStringArray("graph_edit", "node_path_line_edit", "refresh_button", "clear_button", "inactive_text", "warning_text", "pin_checkbox", "keep_emissions_checkbox", "emission_speed_slider", "emission_speed_icon")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+graph_edit = NodePath("EditorPanel/GraphEdit")
+node_path_line_edit = NodePath("EditorPanel/MainButtonsContainer/HBoxContainer2/NodePathLineEdit")
+refresh_button = NodePath("EditorPanel/MainButtonsContainer/HBoxContainer2/RefreshButton")
+clear_button = NodePath("EditorPanel/MainButtonsContainer/HBoxContainer2/ClearButton")
+inactive_text = NodePath("EditorPanel/InactiveTextContainer/InactiveText")
+warning_text = NodePath("EditorPanel/WarningTextContainer/WarningText")
+pin_checkbox = NodePath("EditorPanel/MainButtonsContainer/HBoxContainer2/PinCheckbox")
+keep_emissions_checkbox = NodePath("EditorPanel/MainButtonsContainer/HBoxContainer2/KeepEmissionsCheckbox")
+emission_speed_slider = NodePath("EditorPanel/MainButtonsContainer/HBoxContainer2/EmissionSpeedContainer/EmissionSpeedSlider")
+emission_speed_icon = NodePath("EditorPanel/MainButtonsContainer/HBoxContainer2/EmissionSpeedContainer/EmissionSpeedIcon")
+
+[node name="EditorPanel" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GraphEdit" type="GraphEdit" parent="EditorPanel"]
+layout_mode = 2
+grid_pattern = 1
+connection_lines_thickness = 3.0
+zoom = 0.3
+minimap_size = Vector2(120, 80)
+show_zoom_label = true
+show_grid_buttons = false
+
+[node name="MainButtonsContainer" type="MarginContainer" parent="EditorPanel"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_bottom = 15
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="EditorPanel/MainButtonsContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="ClearButton" type="Button" parent="EditorPanel/MainButtonsContainer/HBoxContainer2"]
+layout_mode = 2
+tooltip_text = "Clear Button
+Clear the graph."
+disabled = true
+icon = SubResource("ImageTexture_4si22")
+
+[node name="RefreshButton" type="Button" parent="EditorPanel/MainButtonsContainer/HBoxContainer2"]
+layout_mode = 2
+tooltip_text = "Refresh Button
+Redraw the graph."
+disabled = true
+icon = SubResource("ImageTexture_66qvc")
+
+[node name="PinCheckbox" type="CheckButton" parent="EditorPanel/MainButtonsContainer/HBoxContainer2"]
+layout_mode = 2
+tooltip_text = "Pin This Node
+If toggled on, ignores any new selections made in the remote scene."
+disabled = true
+icon = SubResource("ImageTexture_quth7")
+
+[node name="NodePathLineEdit" type="LineEdit" parent="EditorPanel/MainButtonsContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+tooltip_text = "Node Path
+Node path for the node that is currently selected in the remote scene."
+text = "/root"
+editable = false
+virtual_keyboard_enabled = false
+middle_mouse_paste_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+select_all_on_focus = true
+
+[node name="KeepEmissionsCheckbox" type="CheckButton" parent="EditorPanel/MainButtonsContainer/HBoxContainer2"]
+layout_mode = 2
+tooltip_text = "Keep emissions
+If toggled on, keeps any received signal emissions drawn in the graph.
+When toggled off, drawn signal emissions will fade out."
+disabled = true
+icon = SubResource("ImageTexture_l8wra")
+
+[node name="EmissionSpeedContainer" type="HBoxContainer" parent="EditorPanel/MainButtonsContainer/HBoxContainer2"]
+layout_mode = 2
+tooltip_text = "Emission Speed
+Controls the speed of the fade out of signal emissions.
+Left means means quick, right means long."
+
+[node name="EmissionSpeedIcon" type="Button" parent="EditorPanel/MainButtonsContainer/HBoxContainer2/EmissionSpeedContainer"]
+layout_mode = 2
+mouse_filter = 2
+disabled = true
+icon = SubResource("ImageTexture_hnh53")
+flat = true
+
+[node name="EmissionSpeedSlider" type="HSlider" parent="EditorPanel/MainButtonsContainer/HBoxContainer2/EmissionSpeedContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_vertical = 1
+min_value = 0.3
+max_value = 6.0
+step = 0.1
+value = 1.0
+editable = false
+
+[node name="InactiveTextContainer" type="PanelContainer" parent="EditorPanel"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+mouse_filter = 2
+
+[node name="InactiveText" type="Label" parent="EditorPanel/InactiveTextContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Play project to start debugging"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="WarningTextContainer" type="PanelContainer" parent="EditorPanel"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+mouse_filter = 2
+
+[node name="WarningText" type="Label" parent="EditorPanel/WarningTextContainer"]
+visible = false
+modulate = Color(0.996567, 0.82419, 0.525376, 1)
+layout_mode = 2
+size_flags_horizontal = 4
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RepoButtonContainer" type="MarginContainer" parent="EditorPanel"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+mouse_filter = 2
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 15
+
+[node name="RepoButton" type="Button" parent="EditorPanel/RepoButtonContainer"]
+texture_filter = 4
+custom_minimum_size = Vector2(145.04, 40)
+layout_mode = 2
+tooltip_text = "Click to access the plugin's repository on Github.
+Submit issues, consult documentation and contribute!"
+icon = ExtResource("2")
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 2
+expand_icon = true
+
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
+[connection signal="node_deselected" from="EditorPanel/GraphEdit" to="." method="_on_graph_edit_node_deselected"]
+[connection signal="node_selected" from="EditorPanel/GraphEdit" to="." method="_on_graph_edit_node_selected"]
+[connection signal="pressed" from="EditorPanel/MainButtonsContainer/HBoxContainer2/ClearButton" to="." method="_on_clear_button_pressed"]
+[connection signal="pressed" from="EditorPanel/MainButtonsContainer/HBoxContainer2/RefreshButton" to="." method="_on_refresh_button_pressed"]
+[connection signal="toggled" from="EditorPanel/MainButtonsContainer/HBoxContainer2/PinCheckbox" to="." method="_on_pin_checkbox_toggled"]
+[connection signal="toggled" from="EditorPanel/MainButtonsContainer/HBoxContainer2/KeepEmissionsCheckbox" to="." method="_on_keep_emissions_checkbox_toggled"]
+[connection signal="value_changed" from="EditorPanel/MainButtonsContainer/HBoxContainer2/EmissionSpeedContainer/EmissionSpeedSlider" to="." method="_on_emission_speed_slider_value_changed"]
+[connection signal="pressed" from="EditorPanel/RepoButtonContainer/RepoButton" to="." method="_on_repo_button_pressed"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://coijkfaac6dwa"
+path="res://.godot/imported/Jazz Vibes.mp3-7be7dc17dd9d18ea9f1d8ae65ecc2fde.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Jazz Vibes.mp3"
+dest_files=["res://.godot/imported/Jazz Vibes.mp3-7be7dc17dd9d18ea9f1d8ae65ecc2fde.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

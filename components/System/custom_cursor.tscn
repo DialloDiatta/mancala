@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://b2h42vcmkmvtx"]
+
+[ext_resource type="Texture2D" uid="uid://mxxxli8nhgin" path="res://assets/ui/open_hand.png" id="1"]
+[ext_resource type="Script" uid="uid://0rssg4fp6qbe" path="res://ui/custom_cursor.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://bklrtm3nn7x6t" path="res://assets/ui/clinched_fist.png" id="3"]
+
+[node name="CustomCursor" type="Sprite2D"]
+process_mode = 3
+z_index = 10
+position = Vector2(-5, 0)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("1")
+script = ExtResource("2")
+rest_texture = ExtResource("1")
+click_texture = ExtResource("3")

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="RandomBead" load_steps=7 format=3 uid="uid://c3xcqpvo6mklv"]
+
+[ext_resource type="Script" uid="uid://6lfruqvxkuqw" path="res://resources/toys/random_bead.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://c5kyylc0ja0hc" path="res://assets/beads/seabean_1.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://cfrmvriaiji7a" path="res://assets/beads/seabean_2.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://dnl3y40odu4c8" path="res://assets/beads/seabean_3.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://bo2hohi83eet4" path="res://assets/beads/seabean_4.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://4s0t0sn2w5h2" path="res://assets/beads/seabean_5.png" id="6"]
+
+[resource]
+script = ExtResource("1")
+resource_local_to_scene = true
+variations = [ExtResource("2"), ExtResource("3"), ExtResource("4"), ExtResource("5"), ExtResource("6")]
+random_rotation = true
+value = 1
+texture = ExtResource("2")
+metadata/_custom_type_script = "uid://6lfruqvxkuqw"

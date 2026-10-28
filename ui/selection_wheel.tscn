@@ -1,0 +1,22 @@
+[gd_scene load_steps=6 format=3 uid="uid://qhhwbaqstdh7"]
+
+[ext_resource type="Script" uid="uid://bablb03wa716t" path="res://ui/selection_wheel.gd" id="1"]
+[ext_resource type="Resource" uid="uid://b8fi5cs00ymf" path="res://resources/toys/positive_bead.tres" id="2"]
+[ext_resource type="Resource" uid="uid://bd1kcm5du02oj" path="res://resources/toys/five_bead.tres" id="3"]
+[ext_resource type="Resource" uid="uid://dofjpvkk8e2no" path="res://resources/toys/ten_bead.tres" id="4"]
+[ext_resource type="Resource" uid="uid://csksxjj8vga58" path="res://resources/toys/negative_bead.tres" id="5"]
+
+[node name="SelectionWheel" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+bkg_color = Color(0.246359, 0.23505, 0.230173, 1)
+line_color = Color(1, 1, 1, 1)
+highlight_color = Color(0.621524, 0.621524, 0.621524, 1)
+options = [null, ExtResource("2"), ExtResource("3"), ExtResource("4"), ExtResource("5")]
