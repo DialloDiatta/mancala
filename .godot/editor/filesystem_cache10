@@ -1,6 +1,7 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1781720195
+::res://::1793210297
 default_bus_layout.tres::AudioBusLayout::1730307772171463457::1781719774::0::1::::<><><>0<>0<><>::
+export_presets.cfg::TextFile::-1::1781720346::0::1::::<><><>0<>0<><>::
 gdre_export.log::TextFile::-1::1781719778::0::1::::<><><>0<>0<><>::
 global.gd::GDScript::2523161734607158869::1781719774::0::1::::<>Node<><>0<>0<><>::
 icon.svg::CompressedTexture2D::2775559434952125513::1781719774::1781719774::1::::<><><>0<>0<>192920029ba90aad904c4b80dddb989f<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
@@ -144,7 +145,7 @@ PrimerPrint.ttf::FontFile::9060932551626660471::1781719774::1781719774::1::::<><
 ::res://assets/sfx/::1781719774
 Jazz Vibes.mp3::AudioStreamMP3::5772564773845726864::1781719774::1781719774::1::::<><><>0<>0<>15dd81bd0d9f361c04e228a0d03057eb<>res://.godot/imported/Jazz Vibes.mp3-7be7dc17dd9d18ea9f1d8ae65ecc2fde.mp3str::
 level-up-1.mp3::AudioStreamMP3::9090173768724606809::1781719774::1781719774::1::::<><><>0<>0<>89f53f95aeeef9f4ceedcc803db30b92<>res://.godot/imported/level-up-1.mp3-af350c0287e57439b9353a7f5804dd45.mp3str::
-::res://assets/ui/::1781720226
+::res://assets/ui/::1781720264
 arrowLeft.png::CompressedTexture2D::5142511688292285364::1781719773::1781719773::1::::<><><>0<>0<>e8803fc3307f01a6b32654aba7d3e24d<>res://.godot/imported/arrowLeft.png-44ed51e01aee92d6b172f453f6f75427.bptc.ctex::
 arrowRight.png::CompressedTexture2D::8787157744505807967::1781719774::1781719774::1::::<><><>0<>0<>62b654d667bea7a86741821c2fe0396c<>res://.godot/imported/arrowRight.png-063493e57377b19ce9510ea7fe59e57b.bptc.ctex::
 banner.png::CompressedTexture2D::8891463241262948756::1781720177::1781720178::1::::<><><>0<>0<>4a0cd32c12c9a6d55dbe4f34ac2f2112<>res://.godot/imported/banner.png-57b2756f6c24d74d2e06726a2c11d3c0.bptc.ctex::
@@ -152,8 +153,6 @@ clinched_fist.png::CompressedTexture2D::3112084068473348989::1781719774::1781719
 Kente Child 8.png::CompressedTexture2D::8767911267066899747::1781719774::1781719774::1::::<><><>0<>0<>335d9007f1d3edd858808ce13e2e37f6<>res://.godot/imported/Kente Child 8.png-8c009b04fbd9c0db9742c706bf9792a1.bptc.ctex::
 kente.png::CompressedTexture2D::1960573436580389108::1781719774::1781719774::1::::<><><>0<>0<>7369d0d63767f824a005383754e0c485<>res://.godot/imported/kente.png-5b9525700a4fc9502a42723affaa3259.s3tc.ctex::
 Mancala Math 10 Frame Game Banner - African Math-01.jpg::CompressedTexture2D::3422748328253874700::1781720226::1781720227::1::::<><><>0<>0<>d64f01a7a1e2f07eb548acfdf3697595<>res://.godot/imported/Mancala Math 10 Frame Game Banner - African Math-01.jpg-679e17bbb6af905a6494962ac1f50ca0.bptc.ctex::
-Mancala Math 10 Frame Game Banner-fina.webp::CompressedTexture2D::2110454580310801447::1781719775::1781719775::1::::<><><>0<>0<>aa337a1d0db7e31077f125724f475619<>res://.godot/imported/Mancala Math 10 Frame Game Banner-fina.webp-1d5206696ed55fdb96631efb5d5e057a.bptc.ctex::
-Mancala Math 10 Frame Game Banner-final.jpg::CompressedTexture2D::7310293743789935950::1781719774::1781719774::1::::<><><>0<>0<>623d850ddff70aa8b127732a5f3e0d86<>res://.godot/imported/Mancala Math 10 Frame Game Banner-final.jpg-cf69c122894ad83be49f23523203e3f7.bptc.ctex::
 Mancala Math Logo.png::CompressedTexture2D::4683224345731955732::1781719774::1781719774::1::::<><><>0<>0<>1fdb530b0889aa78d6c89c2f9da7f436<>res://.godot/imported/Mancala Math Logo.png-a711b1330fbdd19fd92eafa2cee74500.s3tc.ctex::
 open_hand.png::CompressedTexture2D::891184967725515357::1781719774::1781719774::1::::<><><>0<>0<>ca84df1982a81f1ecdbf838fb3a41032<>res://.godot/imported/open_hand.png-91a7789961d4902e961f1b02f3561831.s3tc.ctex::
 sky2.png::CompressedTexture2D::2395978924088279526::1781719774::1781719774::1::::<><><>0<>0<>a83dc9721619861958a0fed60881158a<>res://.godot/imported/sky2.png-14ba7ec04a811f13938cd63f6d2d91ca.s3tc.ctex::
@@ -205,6 +204,8 @@ game_2.tscn::PackedScene::4692154423762152960::1781719774::0::1::::<><><>0<>0<><
 ::res://game-3/::1781719778
 game_3.gd::GDScript::7966771835599504564::1781719775::0::1::::<>Control<><>0<>0<><>::
 game_3.tscn::PackedScene::7247712021508105937::1781719773::0::1::::<><><>0<>0<><>::uid://dlrftk2phr0fo::::res://game-3/game_3.gd<>uid://26ymf6cu3tea::::res://assets/ui/kente.png<>uid://caeg4bgkpb6nm::::res://components/4x6_board_master.tscn<>uid://doi1vrjeibngm::::res://components/Base.tscn<>uid://6lfruqvxkuqw::::res://resources/toys/random_bead.gd<>uid://c5kyylc0ja0hc::::res://assets/beads/seabean_1.png<>uid://cfrmvriaiji7a::::res://assets/beads/seabean_2.png<>uid://dnl3y40odu4c8::::res://assets/beads/seabean_3.png<>uid://bo2hohi83eet4::::res://assets/beads/seabean_4.png<>uid://4s0t0sn2w5h2::::res://assets/beads/seabean_5.png<>uid://crrv7r4gygon5::::res://assets/beads/seabean_base_4x6.png<>uid://coxepkkg2f0l0::::res://resources/toys/cowri.tres<>uid://3fpwivuvisbl::::res://assets/beads/cowry_base_4x6.png<>uid://bip1j4ncvs0ds::::res://assets/beads/glass_base_beads_yellow.png<>uid://df5nvrwyfcg2y::::res://assets/beads/glass_base_beads_red.png<>uid://dhre3jvadva00::::res://assets/ui/Kid Tut Logo - No Text.png<>uid://bm17txogtcafv::::res://game-1/blocks_group.gd<>uid://dyxddohaufueu::::res://assets/ui/banner.png
+::res://Godot-iOS-Builder-4.2/::1793209342
+README.md::TextFile::-1::1735667058::0::1::::<><><>0<>0<><>::
 ::res://old scripts/::1781719778
 ButtonHoverComponent.gd::GDScript::758794501170720385::1781719774::0::1::::ButtonHoverComponent<>Control<><>0<>0<><>::
 control_object.tscn::PackedScene::8901281513914777378::1781719774::0::1::::<><><>0<>0<><>::uid://cxictre7u2tou::::res://components/PieceControl.gd<>uid://bfsrb8qsownjt::::res://icon.svg
@@ -235,14 +236,14 @@ random_bead.gd::GDScript::2198897327703046886::1781719774::0::1::::RandomBead<>B
 sea_bean.tres::Resource/RandomBead::6785760505251645827::1781719773::0::1::::<><><>0<>0<><>::uid://6lfruqvxkuqw::::res://resources/toys/random_bead.gd<>uid://c5kyylc0ja0hc::::res://assets/beads/seabean_1.png<>uid://cfrmvriaiji7a::::res://assets/beads/seabean_2.png<>uid://dnl3y40odu4c8::::res://assets/beads/seabean_3.png<>uid://bo2hohi83eet4::::res://assets/beads/seabean_4.png<>uid://4s0t0sn2w5h2::::res://assets/beads/seabean_5.png
 ten_bead.tres::Resource/Bead::8152802109562566436::1781719773::0::1::::<><><>0<>0<><>::uid://dhddphchtrtbt::::res://resources/toys/bead.gd<>uid://cxt1jfbr7cjq::::res://assets/beads/green_bead.png
 ten_stone.tres::Resource/RandomBead::1656239898598886840::1781719773::0::1::::<><><>0<>0<><>::uid://6lfruqvxkuqw::::res://resources/toys/random_bead.gd<>uid://bhssgy8kg7tk8::::res://assets/beads/ten_stone_1.png<>uid://byq34x1j6o4qh::::res://assets/beads/ten_stone_2.png<>uid://d2my5kqwknak8::::res://assets/beads/ten_stone_3.png<>uid://ctlwt8jydjlxb::::res://assets/beads/ten_stone_4.png<>uid://c6qfvf4m157t::::res://assets/beads/ten_stone_5.png<>uid://c3w3d53fnk8vw::::res://assets/beads/ten_stone_6.png
-::res://ui/::1781719892
+::res://ui/::1781720260
 board_select_button.gd::GDScript::625648027971050733::1781719774::0::1::::BoardSelectButton<>TextureButton<><>0<>0<><>::
 board_select_button.tscn::PackedScene::2272976255048728799::1781719775::0::1::::<><><>0<>0<><>::uid://cjdoghxv7xm0n::::res://assets/boards/cedar_empty.png<>uid://i6cljlxsj0pd::::res://ui/board_select_button.gd
 cursor_handler.gd::GDScript::8964793000740106762::1781719774::0::1::::CursorHandler<>Control<><>0<>0<><>::
 custom_cursor.gd::GDScript::1790940923117798318::1781719775::0::1::::<>Sprite2D<><>0<>0<><>::
 custom_cursor.tscn::PackedScene::3020507049504885441::1781719774::0::1::::<><><>0<>0<><>::uid://kst2cnve1nar::::res://ui/trail.gd<>uid://mxxxli8nhgin::::res://assets/ui/open_hand.png<>uid://0rssg4fp6qbe::::res://ui/custom_cursor.gd<>uid://bklrtm3nn7x6t::::res://assets/ui/clinched_fist.png
 main_menu.gd::GDScript::4133470972179624152::1781719774::0::1::::<>Control<><>0<>0<><>::
-main_menu.tscn::PackedScene::801906097740977907::1781719892::0::1::::<><><>0<>0<><>::uid://by5jwsoyj3d73::::res://ui/main_menu.gd<>uid://dw6ihnrah0bbf::::res://assets/ui/Kente Child 8.png<>uid://26ymf6cu3tea::::res://assets/ui/kente.png<>uid://dh7lcti48dwtr::::res://assets/fonts/Königsberg Demo.otf<>uid://hero5evoimso::::res://assets/ui/title screen.png<>uid://dcffp8hptth7k::::res://assets/ui/Mancala Math 10 Frame Game Banner-final.jpg<>uid://d2dgiaaqrt40j::::res://assets/fonts/PrimerPrint.ttf
+main_menu.tscn::PackedScene::801906097740977907::1781720260::0::1::::<><><>0<>0<><>::uid://by5jwsoyj3d73::::res://ui/main_menu.gd<>uid://dw6ihnrah0bbf::::res://assets/ui/Kente Child 8.png<>uid://26ymf6cu3tea::::res://assets/ui/kente.png<>uid://dh7lcti48dwtr::::res://assets/fonts/Königsberg Demo.otf<>uid://hero5evoimso::::res://assets/ui/title screen.png<>uid://bo1afuvdg083i::::res://assets/ui/Mancala Math 10 Frame Game Banner - African Math-01.jpg<>uid://d2dgiaaqrt40j::::res://assets/fonts/PrimerPrint.ttf
 selection_wheel.gd::GDScript::2389156091500642265::1781719775::0::1::::<>Control<><>0<>1<><>::
 selection_wheel.tscn::PackedScene::1137936502177331026::1781719775::0::1::::<><><>0<>0<><>::uid://bablb03wa716t::::res://ui/selection_wheel.gd<>uid://dhddphchtrtbt::::res://resources/toys/bead.gd<>uid://b8fi5cs00ymf::::res://resources/toys/positive_bead.tres<>uid://bd1kcm5du02oj::::res://resources/toys/five_bead.tres<>uid://dofjpvkk8e2no::::res://resources/toys/ten_bead.tres<>uid://csksxjj8vga58::::res://resources/toys/negative_bead.tres
 skin_select.gd::GDScript::1662729604658756472::1781719773::0::1::::<>MarginContainer<><>0<>0<><>::
